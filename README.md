@@ -14,6 +14,6 @@ Sans cette configuration, Angular ne pourrait pas accéder aux données de l'API
 dans MIDDLEWARE
 
 5.ENSUITE J'AI ConfigureR CORS AVEC CORS_ALLOWED_ORIGINS = [
-    "http://localhost:4200",  # <- autorise Angular à appeler ton API Django
+    "http://localhost:4200",  # <- autorise Angular à appeler API Django
 ]POUR PERMETTRE A DJANGO D'AUTORISER LES REQUETTE QUI VIENNENT DE ANGULAR
 application Angular.
