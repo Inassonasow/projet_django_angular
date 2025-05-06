@@ -17,3 +17,13 @@ dans MIDDLEWARE
     "http://localhost:4200",  # <- autorise Angular à appeler API Django
 ]POUR PERMETTRE A DJANGO D'AUTORISER LES REQUETTE QUI VIENNENT DE ANGULAR
 application Angular.
+
+6. installation du projet angular avec la commande ng new ((front nom du projet))
+
+7. j'importe HttpClientModule dans app.config.ts et ajouter proviHttpClient dans provider pour  activer HttpClient
+
+8.1 Créer un service Angular pour l'API : fichier ts pour logique pour interagir avec l'API. et service.spec.ts pour la configuration pour effectuer des appels http vers L'API django
+
+8.2 configurations du services: configuration de ser_livres.ts pour effectuer des appels HTTP vers votre API Django. : @angular/core : Le décorateur @Injectable est importé depuis Angular. Il permet de marquer cette classe comme un service injectable dans d'autres parties de l'application.
+HttpClient : Ce module est utilisé pour effectuer des requêtes HTTP (GET, POST, PUT, DELETE, etc.) vers une API ou un serveur.
+Observable : Une classe de la bibliothèque rxjs qui permet de gérer les données asynchrones (comme les réponses des requêtes HTTP).
