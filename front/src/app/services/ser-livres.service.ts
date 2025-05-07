@@ -11,6 +11,7 @@ export class SerLivresService {
 
   // Méthode pour récupérer tous les livres
   getLivres(): Observable<any> {
+    console.log('Appel de getLivres'); // Vérifiez si ce message s'affiche
     return this.http.get(this.apiUrl);
   }
 }

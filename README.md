@@ -27,3 +27,8 @@ application Angular.
 8.2 configurations du services: configuration de ser_livres.ts pour effectuer des appels HTTP vers votre API Django. : @angular/core : Le décorateur @Injectable est importé depuis Angular. Il permet de marquer cette classe comme un service injectable dans d'autres parties de l'application.
 HttpClient : Ce module est utilisé pour effectuer des requêtes HTTP (GET, POST, PUT, DELETE, etc.) vers une API ou un serveur.
 Observable : Une classe de la bibliothèque rxjs qui permet de gérer les données asynchrones (comme les réponses des requêtes HTTP).
+
+9. changement du base de donnees sqlite en mysql
+
+
+10.

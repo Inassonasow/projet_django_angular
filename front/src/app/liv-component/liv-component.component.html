@@ -1,0 +1,6 @@
+<h1>Liste des Livres</h1>
+<ul>
+  <li *ngFor="let livre of livres">
+    <strong>{{ livre.titre }}</strong> - {{ livre.auteur }} ({{ livre.date_publication }})
+  </li>
+</ul>

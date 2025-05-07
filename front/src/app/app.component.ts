@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
+import { LivComponentComponent } from './liv-component/liv-component.component';
 
 
 @Component({
   selector: 'app-root',
-  imports: [],
+  standalone: true,
+  imports: [LivComponentComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
