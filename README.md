@@ -31,4 +31,10 @@ Observable : Une classe de la bibliothèque rxjs qui permet de gérer les donné
 9. changement du base de donnees sqlite en mysql
 
 
-10.
+10.AJOut de livre a partir du front: ajout du view qui gere la creation du livre, ajout du view a url.py
+    partie front: creation du composant ajouter_livre et creer le formulaire dans le html, ajout du logique dans le le service puis le ts
+
+
+11: ajout de la methode supprimer et modifie
+        _ajout du methode charger_livre dans liv_component pour  pour centraliser la logique de récupération des livres elle est utile pour éviter de dupliquer le code de récupération des livres.
+        utilisatin de this.router.navigate en injectant le service router dans le constructeur (dans liv_component) et en fin ajouter la route modifier dans app route

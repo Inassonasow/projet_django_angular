@@ -2,5 +2,7 @@
 <ul>
   <li *ngFor="let livre of livres">
     <strong>{{ livre.titre }}</strong> - {{ livre.auteur }} ({{ livre.date_publication }})
+    <button (click)="modifierLivre(livre)">Modifier</button>
+    <button (click)="supprimerLivre(livre.id)">Supprimer</button>
   </li>
 </ul>

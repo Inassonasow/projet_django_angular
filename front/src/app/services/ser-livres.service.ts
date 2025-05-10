@@ -14,4 +14,17 @@ export class SerLivresService {
     console.log('Appel de getLivres'); // Vérifiez si ce message s'affiche
     return this.http.get(this.apiUrl);
   }
+
+  // Méthode pour ajouter un livre
+  ajouterLivre(livre: any): Observable<any> {
+    console.log('Appel de ajouterLivre avec :', livre);
+    return this.http.post(this.apiUrl, livre);
+  }
+
+  supprimerLivre(id: number): Observable<any> {
+  const url = `${this.apiUrl}${id}/`; // URL pour supprimer un livre spécifique
+  console.log('Appel de supprimerLivre avec ID :', id);
+  return this.http.delete(url);
+}
+
 }

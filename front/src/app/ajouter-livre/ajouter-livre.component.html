@@ -1,0 +1,25 @@
+<p>Ajouter un livre</p>
+<form (ngSubmit)="ajouterLivre()" #livreForm="ngForm">
+  <label for="titre">Titre :</label>
+  <input type="text" id="titre" name="titre" [(ngModel)]="livre.titre" required />
+
+  <label for="auteur">Auteur :</label>
+  <input type="text" id="auteur" name="auteur" [(ngModel)]="livre.auteur" required />
+
+  <label for="date_publication">Date de publication :</label>
+  <input type="date" id="date_publication" name="date_publication" [(ngModel)]="livre.date_publication" />
+
+  <label for="resume">Résumé :</label>
+  <textarea id="resume" name="resume" [(ngModel)]="livre.resume"></textarea>
+
+  <label for="isbn">ISBN :</label>
+  <input type="text" id="isbn" name="isbn" [(ngModel)]="livre.isbn" />
+
+  <label for="disponible">Disponible :</label>
+  <select id="disponible" name="disponible" [(ngModel)]="livre.disponible">
+    <option value="true">Oui</option>
+    <option value="false">Non</option>
+  </select>
+
+  <button type="submit">Ajouter</button>
+</form>
