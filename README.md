@@ -38,3 +38,17 @@ Observable : Une classe de la bibliothèque rxjs qui permet de gérer les donné
 11: ajout de la methode supprimer et modifie
         _ajout du methode charger_livre dans liv_component pour  pour centraliser la logique de récupération des livres elle est utile pour éviter de dupliquer le code de récupération des livres.
         utilisatin de this.router.navigate en injectant le service router dans le constructeur (dans liv_component) et en fin ajouter la route modifier dans app route
+
+12. creation du composant pour vor detail du livre:
+    1.Ajoutez une méthode voirDetail dans le fichier liv-component.component.ts pour rediriger l'utilisateur vers une page de détail : voirDetail(id: number): void {
+  this.router.navigate(['/detail-livre', id]); // Redirige vers la page de détail
+}  2. ajout de route pour la page de détail
+        Modifiez le fichier liv-component.component.html pour inclure un bouton Détail à côté de chaque livre :
+         Ajouter la méthode voirDetail dans le TypeScript: voirDetail(id: number): void {
+         this.router.navigate(['/detail-livre', id]); // Redirige vers la page de détail
+    }
+        . Ajouter la route dans app.routes.ts
+        Ajouter une méthode getLivreById
+        : Afficher les détails dans le HTML
+
+

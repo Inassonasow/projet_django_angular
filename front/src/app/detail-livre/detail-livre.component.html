@@ -1,0 +1,11 @@
+<p>detail-livre works!</p>
+<h1>Détails du Livre</h1>
+<div *ngIf="livre">
+  <p><strong>Titre :</strong> {{ livre.titre }}</p>
+  <p><strong>Auteur :</strong> {{ livre.auteur }}</p>
+  <p><strong>Date de publication :</strong> {{ livre.date_publication }}</p>
+  <p><strong>Résumé :</strong> {{ livre.resume }}</p>
+  <p><strong>ISBN :</strong> {{ livre.isbn }}</p>
+  <p><strong>Disponible :</strong> {{ livre.disponible ? 'Oui' : 'Non' }}</p>
+</div>
+<a routerLink="/">Retour à la liste</a>

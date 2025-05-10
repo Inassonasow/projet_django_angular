@@ -27,4 +27,9 @@ export class SerLivresService {
   return this.http.delete(url);
 }
 
+getLivreById(id: number): Observable<any> {
+  const url = `${this.apiUrl}${id}/`; // URL pour récupérer un livre spécifique
+  return this.http.get(url);
+}
+
 }

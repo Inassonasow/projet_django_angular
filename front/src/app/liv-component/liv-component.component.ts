@@ -2,10 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { SerLivresService } from '../services/ser-livres.service';
 import { CommonModule } from '@angular/common'; // Importation du module commun
 import { Router } from '@angular/router';
+import { RouterLink} from '@angular/router'
 @Component({
   selector: 'app-liv-component',
   standalone: true,
-  imports: [CommonModule,], // Ajout de CommonModule pour les directives Angular
+  imports: [CommonModule,RouterLink], // Ajout de CommonModule pour les directives Angular
   templateUrl: './liv-component.component.html',
   styleUrl: './liv-component.component.css'
 })
@@ -54,6 +55,10 @@ export class LivComponentComponent implements OnInit {
 
   modifierLivre(livre: any): void {
   this.router.navigate(['/modifier-livre', livre.id]); // Redirige vers le formulaire de modification
+}
+
+voirDetail(id: number): void {
+  this.router.navigate(['/detail-livre', id]); // Redirige vers la page de détail
 }
   
 }

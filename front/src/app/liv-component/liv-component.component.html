@@ -4,5 +4,8 @@
     <strong>{{ livre.titre }}</strong> - {{ livre.auteur }} ({{ livre.date_publication }})
     <button (click)="modifierLivre(livre)">Modifier</button>
     <button (click)="supprimerLivre(livre.id)">Supprimer</button>
+    <button (click)="voirDetail(livre.id)">Détail</button> <!-- Nouveau bouton -->
   </li>
 </ul>
+
+<a routerLink="chemindeajoutlivre">ajouter un livre</a>
